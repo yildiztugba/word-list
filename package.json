@@ -1,5 +1,5 @@
 {
-  "name": "favorite-word",
+  "name": "word-list",
   "version": "1.0.0",
   "scripts": {
     "document": "node ./dev-scripts/document.js",
@@ -14,14 +14,14 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hackyourfuturebelgium/favorite-word.git"
+    "url": "git+https://github.com/hackyourfuturebelgium/word-list.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hackyourfuturebelgium/favorite-word/issues"
+    "url": "https://github.com/hackyourfuturebelgium/word-list/issues"
   },
-  "homepage": "https://github.com/hackyourfuturebelgium/favorite-word",
+  "homepage": "https://github.com/hackyourfuturebelgium/word-list",
   "devDependencies": {
     "eslint": "^7.25.0",
     "eslint-config-airbnb-base": "^14.2.1",
