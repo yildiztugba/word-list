@@ -1,0 +1,39 @@
+{
+  "name": "favorite-word",
+  "version": "1.0.0",
+  "scripts": {
+    "document": "node ./dev-scripts/document.js",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "test:ci": "node --experimental-vm-modules node_modules/.bin/jest",
+    "lint:css": "stylelint",
+    "lint:css:ci": "stylelint 'public/**/*.css'",
+    "lint:js": "eslint --max-warnings=0 --ext=.js --format=codeframe",
+    "lint:js:ci": "npm run lint:js -- ./src",
+    "format": "prettier"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackyourfuturebelgium/favorite-word.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hackyourfuturebelgium/favorite-word/issues"
+  },
+  "homepage": "https://github.com/hackyourfuturebelgium/favorite-word",
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^32.3.1",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-prettier": "^3.4.0",
+    "jest": "^26.6.3",
+    "jsdoc-to-markdown": "^6.0.1",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0"
+  }
+}
