@@ -65,6 +65,7 @@ about: A template PR for contributing to this project
 - [ ] there is an `index.js` that is included by the `index.html` file
 - [ ] `../listener` files are imported
 - [ ] there is no code that needs to run _after_ the page is initialized
+- [ ] any other files have helpful names
 
 </details>
 <details>
@@ -75,6 +76,7 @@ about: A template PR for contributing to this project
 - [ ] the DOM _is not_ be modified
 - [ ] handlers are imported and used as callbacks to event listeners
 - [ ] no other functions are imported or used
+- [ ] the file name makes sense for the listener
 
 </details>
 <details>
@@ -82,6 +84,7 @@ about: A template PR for contributing to this project
 <br>
 
 - [ ] handlers have a JSDoc comment
+- [ ] the function name matches the file name
 - [ ] handlers are used as a callback to `.addEventListener` somewhere in the program
 - [ ] functions from `/logic` or `/procedures` files may be imported and called
 - [ ] functions from `/handlers` may be imported and attached to the DOM with event listeners
@@ -95,10 +98,12 @@ about: A template PR for contributing to this project
 <br>
 
 - [ ] procedures have a JSDoc comment
+- [ ] the function name matches the file name
 - [ ] procedures _is not_ used as a callback to `.addEventListener` anywhere in the program
 - [ ] functions from `/logic` or `/procedures` may be imported and called
 - [ ] functions from `/handlers` may be imported and attached to the DOM with event listeners
 - [ ] data from `/data.js` may be imported and used
+- [ ] procedures must be used in more than one place (otherwise you don't need a separate function)
 - [ ] procedures may read and write to the DOM
 - [ ] procedures may return values to be used later in the program
 
@@ -108,6 +113,7 @@ about: A template PR for contributing to this project
 <br>
 
 - [ ] the handler has a complete and correct JSDoc comment
+- [ ] the function name matches the file name
 - [ ] other functions from `/logic` may be imported and called
 - [ ] the function _does not_ read or write to the DOM
 - [ ] the function _does not_ log to the console
