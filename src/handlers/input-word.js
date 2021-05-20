@@ -27,13 +27,19 @@ export const handleInputWord = (event) => {
 
   /* -- use the input and data to implement the user story --
 
-    if the user is adding a word
-      make sure it is a word before pushing it
-    if the user is removing a word
-      make sure it is in the list before removing it
-    if either of those mistakes were made
-      update the warnings element to let the user know
-      do not modify the words list
+    a user can add a new word to the list
+      given the input contains non-letters,
+        it will not be added
+        a warning is displayed
+      given the input contains only letters
+        it will be added to the words list
+        the list will be re-rendered
+    a user can remove words from the list
+      given the input is not in the list
+        a warning is posted
+      given the input is in the list
+        it is removed
+        the list is re-rendered
   */
 
   // ... write some code ...

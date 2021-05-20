@@ -72,9 +72,9 @@ When you are creating your PR be sure to delete the checklists that are not need
 So you're ready to start coding? If you haven't cloned this repository already you should, and then ...
 
 1. Clone this repository:
-   - `$ git clone git@github.com:HackYourFutureBelgium/practice-code-review.git`
+   - `$ git clone git@github.com:HackYourFutureBelgium/word-list.git`
 2. Navigate to this repository in your local computer
-   - `$ cd practice-code-review`
+   - `$ cd word-list`
 3. Install the project's development dependencies - you will need these for the code quality automation:
    - `$ npm install`
 

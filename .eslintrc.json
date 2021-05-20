@@ -11,7 +11,8 @@
     {
       "files": ["*.spec.js"],
       "rules": {
-        "no-magic-numbers": 0
+        "no-magic-numbers": 0,
+        "no-undefined": 0
       },
       "env": {
         "browser": false,
@@ -25,7 +26,8 @@
         "no-console": 0,
         "no-unused-expressions": 0,
         "no-lone-blocks": 0,
-        "jsdoc/require-jsdoc": 0
+        "jsdoc/require-jsdoc": 0,
+        "no-undefined": 0
       },
       "env": {
         "jest": true
@@ -46,6 +48,7 @@
     "no-return-assign": 1,
     "no-unused-expressions": 1,
     "no-useless-computed-key": 1,
+    "no-useless-rename": 1,
     "no-label-var": 1,
     "no-shadow": 1,
     "no-undefined": 1,
@@ -55,6 +58,7 @@
     "vars-on-top": 0,
     "no-plusplus": 0,
     "no-warning-comments": 1,
+    "prefer-destructuring": 1,
 
     "prettier/prettier": 1,
 
