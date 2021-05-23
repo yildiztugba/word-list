@@ -58,7 +58,6 @@ When you are creating your PR be sure to delete the checklists that are not need
 
 ## Repo Setup
 
-- Everyone in your group is a contributor with _write_ access in the group repo
 - Turn on GitHub Pages and put a link to your website in the repo's description
 - in the _Branches_ section of your repo's settings make sure:
   - The repository [requires a review](https://github.blog/2018-03-23-require-multiple-reviewers/) before pull requests can be merged.
