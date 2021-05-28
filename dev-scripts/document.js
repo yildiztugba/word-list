@@ -131,12 +131,19 @@ appendToDocs(SOURCE_DIR).then((_) => {
     ? oldReadme.replace(tocRegex, tocReplacer)
     : `${tocReplacer}\n\n${oldReadme}`;
 
+  const treeRegex =
+    /(<!--[ \t]*BEGIN TREE[ \t]*-->)([\s\S]*)(<!--[ \t]*END TREE[ \t]*-->)/;
+  const treeReplacer = `<!-- BEGIN TREE -->\n\n![dependency graph](./dependency-graph.svg)\n\n<!-- END TREE -->`;
+  const treedReadme = tocedReadme.match(treeRegex)
+    ? tocedReadme.replace(treeRegex, treeReplacer)
+    : `${treeReplacer}\n\n${tocedReadme}`;
+
   const titleRegex =
     /(<!--[ \t]*BEGIN TITLE[ \t]*-->)([\s\S]*)(<!--[ \t]*END TITLE[ \t]*-->)/;
   const titleReplacer = `<!-- BEGIN TITLE -->\n# ${TITLE}\n\n<!-- END TITLE -->`;
-  const titledReadme = tocedReadme.match(titleRegex)
-    ? tocedReadme.replace(titleRegex, titleReplacer)
-    : `${titleReplacer}\n\n${tocedReadme}`;
+  const titledReadme = treedReadme.match(titleRegex)
+    ? treedReadme.replace(titleRegex, titleReplacer)
+    : `${titleReplacer}\n\n${treedReadme}`;
 
   const docsRegex =
     /(<!--[ \t]*BEGIN DOCS[ \t]*-->)([\s\S]*)(<!--[ \t]*END DOCS[ \t]*-->)/;

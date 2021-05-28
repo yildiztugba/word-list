@@ -23,6 +23,12 @@
 
 <!-- END TOC -->
 
+<!-- BEGIN TREE -->
+
+![dependency graph](./dependency-graph.svg)
+
+<!-- END TREE -->
+
 <!-- BEGIN DOCS -->
 
 ---
