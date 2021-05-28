@@ -4,6 +4,12 @@
 
 <!-- END TITLE -->
 
+<!-- BEGIN TREE -->
+
+![dependency graph](./dependency-graph.svg)
+
+<!-- END TREE -->
+
 <!-- BEGIN TOC -->
 
 - handlers
@@ -22,12 +28,6 @@
 - [data.js](#srcdatajs)
 
 <!-- END TOC -->
-
-<!-- BEGIN TREE -->
-
-![dependency graph](./dependency-graph.svg)
-
-<!-- END TREE -->
 
 <!-- BEGIN DOCS -->
 
