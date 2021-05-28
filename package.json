@@ -2,7 +2,7 @@
   "name": "word-list",
   "version": "1.0.0",
   "scripts": {
-    "tree": "depcruise --include-only \"^src\" --output-type dot src | graphviz -Tsvg -odependency-graph.svg",
+    "tree": "depcruise --include-only \"^src\" --output-type dot src | graphviz -Tsvg -odocs/dependency-graph.svg",
     "document": "node ./dev-scripts/document.js && npm run tree",
     "test": "node --experimental-vm-modules node_modules/.bin/jest",
     "test:ci": "node --experimental-vm-modules node_modules/.bin/jest",

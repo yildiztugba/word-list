@@ -10,7 +10,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const TITLE = 'DOCS';
 
 const sourceRelativePath = process.argv[2] || '../src';
-const docsRelativePath = process.argv[3] || '../DOCS.md';
+const docsRelativePath = process.argv[3] || '../docs/README.md';
 
 const SOURCE_DIR = path.normalize(path.join(__dirname, sourceRelativePath));
 const DOCS_PATH = path.normalize(path.join(__dirname, docsRelativePath));
