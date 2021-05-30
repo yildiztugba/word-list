@@ -42,7 +42,7 @@
 <!-- src/data.js -->
 <g id="node1" class="node">
 <title>src/data.js</title>
-<g id="a_node1"><a xlink:href="src/data.js" xlink:title="data.js">
+<g id="a_node1"><a xlink:href="../src/data.js" xlink:title="data.js">
 <path fill="#ffffcc" stroke="black" d="M354.06,-142.3C354.06,-142.3 312.46,-142.3 312.46,-142.3 309.36,-142.3 306.26,-139.2 306.26,-136.1 306.26,-136.1 306.26,-129.9 306.26,-129.9 306.26,-126.8 309.36,-123.7 312.46,-123.7 312.46,-123.7 354.06,-123.7 354.06,-123.7 357.16,-123.7 360.26,-126.8 360.26,-129.9 360.26,-129.9 360.26,-136.1 360.26,-136.1 360.26,-139.2 357.16,-142.3 354.06,-142.3"/>
 <text text-anchor="middle" x="333.26" y="-130.3" font-family="Helvetica,sans-Serif" font-size="9.00">data.js</text>
 </a>
@@ -51,7 +51,7 @@
 <!-- src/handlers/input&#45;word.js -->
 <g id="node2" class="node">
 <title>src/handlers/input&#45;word.js</title>
-<g id="a_node2"><a xlink:href="src/handlers/input-word.js" xlink:title="input&#45;word.js">
+<g id="a_node2"><a xlink:href="../src/handlers/input-word.js" xlink:title="input&#45;word.js">
 <path fill="#ffffcc" stroke="black" d="M265.8,-144.3C265.8,-144.3 211.2,-144.3 211.2,-144.3 208.1,-144.3 205,-141.2 205,-138.1 205,-138.1 205,-131.9 205,-131.9 205,-128.8 208.1,-125.7 211.2,-125.7 211.2,-125.7 265.8,-125.7 265.8,-125.7 268.9,-125.7 272,-128.8 272,-131.9 272,-131.9 272,-138.1 272,-138.1 272,-141.2 268.9,-144.3 265.8,-144.3"/>
 <text text-anchor="middle" x="238.5" y="-132.3" font-family="Helvetica,sans-Serif" font-size="9.00">input&#45;word.js</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- src/logic/is&#45;word.js -->
 <g id="node3" class="node">
 <title>src/logic/is&#45;word.js</title>
-<g id="a_node3"><a xlink:href="src/logic/is-word.js" xlink:title="is&#45;word.js">
+<g id="a_node3"><a xlink:href="../src/logic/is-word.js" xlink:title="is&#45;word.js">
 <path fill="#ffffcc" stroke="black" d="M354.06,-42.3C354.06,-42.3 312.46,-42.3 312.46,-42.3 309.36,-42.3 306.26,-39.2 306.26,-36.1 306.26,-36.1 306.26,-29.9 306.26,-29.9 306.26,-26.8 309.36,-23.7 312.46,-23.7 312.46,-23.7 354.06,-23.7 354.06,-23.7 357.16,-23.7 360.26,-26.8 360.26,-29.9 360.26,-29.9 360.26,-36.1 360.26,-36.1 360.26,-39.2 357.16,-42.3 354.06,-42.3"/>
 <text text-anchor="middle" x="333.26" y="-30.3" font-family="Helvetica,sans-Serif" font-size="9.00">is&#45;word.js</text>
 </a>
@@ -81,7 +81,7 @@
 <!-- src/logic/sort&#45;strings.js -->
 <g id="node4" class="node">
 <title>src/logic/sort&#45;strings.js</title>
-<g id="a_node4"><a xlink:href="src/logic/sort-strings.js" xlink:title="sort&#45;strings.js">
+<g id="a_node4"><a xlink:href="../src/logic/sort-strings.js" xlink:title="sort&#45;strings.js">
 <path fill="#ffffcc" stroke="black" d="M362.05,-73.3C362.05,-73.3 304.46,-73.3 304.46,-73.3 301.36,-73.3 298.26,-70.2 298.26,-67.1 298.26,-67.1 298.26,-60.9 298.26,-60.9 298.26,-57.8 301.36,-54.7 304.46,-54.7 304.46,-54.7 362.05,-54.7 362.05,-54.7 365.15,-54.7 368.25,-57.8 368.25,-60.9 368.25,-60.9 368.25,-67.1 368.25,-67.1 368.25,-70.2 365.15,-73.3 362.05,-73.3"/>
 <text text-anchor="middle" x="333.26" y="-61.3" font-family="Helvetica,sans-Serif" font-size="9.00">sort&#45;strings.js</text>
 </a>
@@ -96,7 +96,7 @@
 <!-- src/procedures/update&#45;list.js -->
 <g id="node5" class="node">
 <title>src/procedures/update&#45;list.js</title>
-<g id="a_node5"><a xlink:href="src/procedures/update-list.js" xlink:title="update&#45;list.js">
+<g id="a_node5"><a xlink:href="../src/procedures/update-list.js" xlink:title="update&#45;list.js">
 <path fill="#ffffcc" stroke="black" d="M360.06,-176.3C360.06,-176.3 306.45,-176.3 306.45,-176.3 303.35,-176.3 300.25,-173.2 300.25,-170.1 300.25,-170.1 300.25,-163.9 300.25,-163.9 300.25,-160.8 303.35,-157.7 306.45,-157.7 306.45,-157.7 360.06,-157.7 360.06,-157.7 363.16,-157.7 366.26,-160.8 366.26,-163.9 366.26,-163.9 366.26,-170.1 366.26,-170.1 366.26,-173.2 363.16,-176.3 360.06,-176.3"/>
 <text text-anchor="middle" x="333.26" y="-164.3" font-family="Helvetica,sans-Serif" font-size="9.00">update&#45;list.js</text>
 </a>
@@ -111,7 +111,7 @@
 <!-- src/handlers/sort&#45;words.js -->
 <g id="node6" class="node">
 <title>src/handlers/sort&#45;words.js</title>
-<g id="a_node6"><a xlink:href="src/handlers/sort-words.js" xlink:title="sort&#45;words.js">
+<g id="a_node6"><a xlink:href="../src/handlers/sort-words.js" xlink:title="sort&#45;words.js">
 <path fill="#ffffcc" stroke="black" d="M265.8,-175.3C265.8,-175.3 211.21,-175.3 211.21,-175.3 208.11,-175.3 205.01,-172.2 205.01,-169.1 205.01,-169.1 205.01,-162.9 205.01,-162.9 205.01,-159.8 208.11,-156.7 211.21,-156.7 211.21,-156.7 265.8,-156.7 265.8,-156.7 268.9,-156.7 272,-159.8 272,-162.9 272,-162.9 272,-169.1 272,-169.1 272,-172.2 268.9,-175.3 265.8,-175.3"/>
 <text text-anchor="middle" x="238.5" y="-163.3" font-family="Helvetica,sans-Serif" font-size="9.00">sort&#45;words.js</text>
 </a>
@@ -138,7 +138,7 @@
 <!-- src/init/index.js -->
 <g id="node7" class="node">
 <title>src/init/index.js</title>
-<g id="a_node7"><a xlink:href="src/init/index.js" xlink:title="index.js">
+<g id="a_node7"><a xlink:href="../src/init/index.js" xlink:title="index.js">
 <path fill="#ffffcc" stroke="black" d="M71.8,-159.3C71.8,-159.3 30.2,-159.3 30.2,-159.3 27.1,-159.3 24,-156.2 24,-153.1 24,-153.1 24,-146.9 24,-146.9 24,-143.8 27.1,-140.7 30.2,-140.7 30.2,-140.7 71.8,-140.7 71.8,-140.7 74.9,-140.7 78,-143.8 78,-146.9 78,-146.9 78,-153.1 78,-153.1 78,-156.2 74.9,-159.3 71.8,-159.3"/>
 <text text-anchor="middle" x="51" y="-147.3" font-family="Helvetica,sans-Serif" font-size="9.00">index.js</text>
 </a>
@@ -159,7 +159,7 @@
 <!-- src/listeners/input&#45;word.js -->
 <g id="node8" class="node">
 <title>src/listeners/input&#45;word.js</title>
-<g id="a_node8"><a xlink:href="src/listeners/input-word.js" xlink:title="input&#45;word.js">
+<g id="a_node8"><a xlink:href="../src/listeners/input-word.js" xlink:title="input&#45;word.js">
 <path fill="#ffffcc" stroke="black" d="M162.8,-144.3C162.8,-144.3 108.2,-144.3 108.2,-144.3 105.1,-144.3 102,-141.2 102,-138.1 102,-138.1 102,-131.9 102,-131.9 102,-128.8 105.1,-125.7 108.2,-125.7 108.2,-125.7 162.8,-125.7 162.8,-125.7 165.9,-125.7 169,-128.8 169,-131.9 169,-131.9 169,-138.1 169,-138.1 169,-141.2 165.9,-144.3 162.8,-144.3"/>
 <text text-anchor="middle" x="135.5" y="-132.3" font-family="Helvetica,sans-Serif" font-size="9.00">input&#45;word.js</text>
 </a>
@@ -174,7 +174,7 @@
 <!-- src/listeners/sort&#45;words.js -->
 <g id="node9" class="node">
 <title>src/listeners/sort&#45;words.js</title>
-<g id="a_node9"><a xlink:href="src/listeners/sort-words.js" xlink:title="sort&#45;words.js">
+<g id="a_node9"><a xlink:href="../src/listeners/sort-words.js" xlink:title="sort&#45;words.js">
 <path fill="#ffffcc" stroke="black" d="M162.79,-175.3C162.79,-175.3 108.21,-175.3 108.21,-175.3 105.11,-175.3 102.01,-172.2 102.01,-169.1 102.01,-169.1 102.01,-162.9 102.01,-162.9 102.01,-159.8 105.11,-156.7 108.21,-156.7 108.21,-156.7 162.79,-156.7 162.79,-156.7 165.89,-156.7 168.99,-159.8 168.99,-162.9 168.99,-162.9 168.99,-169.1 168.99,-169.1 168.99,-172.2 165.89,-175.3 162.79,-175.3"/>
 <text text-anchor="middle" x="135.5" y="-163.3" font-family="Helvetica,sans-Serif" font-size="9.00">sort&#45;words.js</text>
 </a>
@@ -201,7 +201,7 @@
 <!-- src/logic/is&#45;word.spec.js -->
 <g id="node10" class="node">
 <title>src/logic/is&#45;word.spec.js</title>
-<g id="a_node10"><a xlink:href="src/logic/is-word.spec.js" xlink:title="is&#45;word.spec.js">
+<g id="a_node10"><a xlink:href="../src/logic/is-word.spec.js" xlink:title="is&#45;word.spec.js">
 <path fill="#ffffcc" stroke="black" d="M270.3,-42.3C270.3,-42.3 206.7,-42.3 206.7,-42.3 203.6,-42.3 200.5,-39.2 200.5,-36.1 200.5,-36.1 200.5,-29.9 200.5,-29.9 200.5,-26.8 203.6,-23.7 206.7,-23.7 206.7,-23.7 270.3,-23.7 270.3,-23.7 273.4,-23.7 276.5,-26.8 276.5,-29.9 276.5,-29.9 276.5,-36.1 276.5,-36.1 276.5,-39.2 273.4,-42.3 270.3,-42.3"/>
 <text text-anchor="middle" x="238.5" y="-30.3" font-family="Helvetica,sans-Serif" font-size="9.00">is&#45;word.spec.js</text>
 </a>
@@ -216,7 +216,7 @@
 <!-- src/logic/sort&#45;strings.spec.js -->
 <g id="node11" class="node">
 <title>src/logic/sort&#45;strings.spec.js</title>
-<g id="a_node11"><a xlink:href="src/logic/sort-strings.spec.js" xlink:title="sort&#45;strings.spec.js">
+<g id="a_node11"><a xlink:href="../src/logic/sort-strings.spec.js" xlink:title="sort&#45;strings.spec.js">
 <path fill="#ffffcc" stroke="black" d="M277.8,-73.3C277.8,-73.3 199.2,-73.3 199.2,-73.3 196.1,-73.3 193,-70.2 193,-67.1 193,-67.1 193,-60.9 193,-60.9 193,-57.8 196.1,-54.7 199.2,-54.7 199.2,-54.7 277.8,-54.7 277.8,-54.7 280.9,-54.7 284,-57.8 284,-60.9 284,-60.9 284,-67.1 284,-67.1 284,-70.2 280.9,-73.3 277.8,-73.3"/>
 <text text-anchor="middle" x="238.5" y="-61.3" font-family="Helvetica,sans-Serif" font-size="9.00">sort&#45;strings.spec.js</text>
 </a>
