@@ -111,7 +111,7 @@ This repository comes with features to help you and your group write good code. 
 
 Remember the `.lint-pass.txt`, `.test-pass.txt`, ... files from Practice Code Review? Enough of that! It's time for the real deal. With this project repository your code quality results will not be written into separate files, but will be checked automatically by GitHub. Any mistakes and your PR not be able to merge.
 
-When you open a PR to `main`/`master` in your repository, GitHub will run the workflows in [./.github/workflows](./.github/worflows):
+When you open a PR to `main`/`master` in your repository, GitHub will run the workflows in [./.github/workflows](./.github/workflows):
 
 - **Lint JavaScript CI**: Lints all the .js files in your `/src` folder, if there are any warnings or errors the check will fail.
 - **Lint CSS CI**: lints all the .css files in your `/public` folder, if there are any warnings or errors the check will fail.
