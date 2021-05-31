@@ -81,10 +81,11 @@ So you're ready to start coding? If you haven't cloned this repository already y
 
 ## Running the Site
 
-This is a static website that only uses HTML, CSS and JavaScript, so you can run it directly from VSCode using `liveServer` or another static server like `http-server` or `study-lenses`.
+This is a static website that only uses HTML, CSS and JavaScript, so you can run it using any static server.  The simplest way to get started is:
 
-- `index.html` will run your code
-- `demo.html` will run the example website for reverse-engineering
+- `npm run dev`: this will open `index.html` in your browser and automatically refresh whenever you change your code.
+
+Navigating to `demo.html` will run the example website for reverse-engineering.
 
 ---
 

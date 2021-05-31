@@ -10,7 +10,8 @@
     "lint:css:ci": "stylelint 'public/**/*.css'",
     "lint:js": "eslint --max-warnings=0 --ext=.js --format=codeframe",
     "lint:js:ci": "npm run lint:js -- ./src",
-    "format": "prettier"
+    "format": "prettier",
+    "dev": "lite-server"
   },
   "type": "module",
   "repository": {
@@ -38,6 +39,7 @@
     "jsdoc-to-markdown": "^6.0.1",
     "prettier": "^2.2.1",
     "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^22.0.0"
+    "stylelint-config-standard": "^22.0.0",
+    "lite-server": "^2.6.1",
   }
 }
