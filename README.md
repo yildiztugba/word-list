@@ -63,6 +63,7 @@ When you are creating your PR be sure to delete the checklists that are not need
   - The repository [requires a review](https://github.blog/2018-03-23-require-multiple-reviewers/) before pull requests can be merged.
   - The `master`/`main` branch must "_Require status checks to pass before merging_"
   - The `master`/`main` branch must "_Require require branches to be up to date before merging_"
+- In enable the _Actions_ section of your repository so the automated checks will run each time you send a PR to `master`/`main`
 
 ---
 
@@ -81,7 +82,7 @@ So you're ready to start coding? If you haven't cloned this repository already y
 
 ## Running the Site
 
-This is a static website that only uses HTML, CSS and JavaScript, so you can run it using any static server.  But the simplest way to get started is to use the dev server included with this repo:
+This is a static website that only uses HTML, CSS and JavaScript, so you can run it using any static server. But the simplest way to get started is to use the dev server included with this repo:
 
 - `npm run dev`: this will open `index.html` in your browser and automatically refresh whenever you change your code.
 
