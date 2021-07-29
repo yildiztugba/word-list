@@ -61,6 +61,7 @@ When you are creating your PR be sure to delete the checklists that are not need
 - Turn on GitHub Pages and put a link to your website in the repo's description
 - in the _Branches_ section of your repo's settings make sure:
   - The repository [requires a review](https://github.blog/2018-03-23-require-multiple-reviewers/) before pull requests can be merged.
+  - check _Dismiss stale pull request approvals when new commits are pushed_
   - The `master`/`main` branch must "_Require status checks to pass before merging_"
   - The `master`/`main` branch must "_Require require branches to be up to date before merging_"
 - In enable the _Actions_ section of your repository so the automated checks will run each time you send a PR to `master`/`main`
@@ -110,14 +111,12 @@ This repository comes with features to help you and your group write good code. 
 
 > checks on GitHub
 
-Remember the `.lint-pass.txt`, `.test-pass.txt`, ... files from Practice Code Review? Enough of that! It's time for the real deal. With this project repository your code quality results will not be written into separate files, but will be checked automatically by GitHub. Any mistakes and your PR not be able to merge.
-
 When you open a PR to `main`/`master` in your repository, GitHub will run the workflows in [./.github/workflows](./.github/workflows):
 
-- **Lint JavaScript CI**: Lints all the .js files in your `/src` folder, if there are any warnings or errors the check will fail.
-- **Lint CSS CI**: lints all the .css files in your `/public` folder, if there are any warnings or errors the check will fail.
-- **Test CI**: runs all the `.spec.js` fils in your `/src` folder. If any tests fail, this check will fail.
-- **Document CI**: re-renders the `DOCS.md` file in the root of your repository, making sure that the documentation is always up to date. If the documentation script has any trouble the check will fail.
+- **`npm run ci:lint:js`**: Lints all the .js files in your `/src` folder, if there are any warnings or errors the check will fail.
+- **`npm run ci:lint:css`**: lints all the .css files in your `/styles` folder, if there are any warnings or errors the check will fail.
+- **`npm run ci:test`**: runs all the `.spec.js` fils in your `/src` folder. If any tests fail, this check will fail.
+- **`npm run document`**: re-renders the `DOCS.md` file in the root of your repository, making sure that the documentation is always up to date. If the documentation script has any trouble the check will fail.
 
 You will not be able to merge your branch until all the checks pass. These checks will be run again each time you push changes to your branch, so no worries if you don't pass the checks on your first try.
 

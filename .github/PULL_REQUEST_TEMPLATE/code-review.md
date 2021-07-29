@@ -47,6 +47,7 @@ about: A template PR for contributing to this project
 - [ ] helpful variable names are used
 - [ ] all comments are clear and help to understand the code
 - [ ] there is no unused code in comments
+- [ ] all file names are helpful and match their exports
 
 <details>
 <summary>src/data.js</summary>
@@ -94,18 +95,14 @@ about: A template PR for contributing to this project
 
 </details>
 <details>
-<summary>src/procedures</summary>
+<summary>src/components</summary>
 <br>
 
-- [ ] procedures have a JSDoc comment
-- [ ] the function name matches the file name
-- [ ] procedures _is not_ used as a callback to `.addEventListener` anywhere in the program
-- [ ] functions from `/logic` or `/procedures` may be imported and called
-- [ ] functions from `/handlers` may be imported and attached to the DOM with event listeners
-- [ ] data from `/data.js` may be imported and used
-- [ ] procedures must be used in more than one place (otherwise you don't need a separate function)
-- [ ] procedures may read and write to the DOM
-- [ ] procedures may return values to be used later in the program
+- [ ] A DOM element is returned
+- [ ] handlers can be imported and used as callbacks to event listeners
+- [ ] _logic_, _components_ and _procedures_ can also be imported
+- [ ] there is an HTML test file to render the component with different inputs
+- [ ] bonus points for unit tests
 
 </details>
 <details>

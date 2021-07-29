@@ -3,6 +3,11 @@
     ".js": "highlight"
   },
   "study": {
-    "type": "module"
+    "type": "module",
+    "tests": [".spec.js"],
+    "run": true,
+    "debug": true,
+    "environment": true,
+    "save": true
   }
 }

@@ -1,9 +1,7 @@
-import { data } from '../data.js';
+import { data } from '../../data.js';
 import { isWord } from '../logic/is-word.js';
 import { sortStrings } from '../logic/sort-strings.js';
-import { updateList } from '../procedures/update-list.js';
-
-const warnings = document.getElementById('warnings');
+import { renderList } from '../components/render-list.js';
 
 /**
  * Entry point for users adding a word to the list.
@@ -42,9 +40,20 @@ export const handleInputWord = (event) => {
         the list is re-rendered
   */
 
-  // ... write some code ...
+  const warnings = document.getElementById('warnings');
+  warnings.innerText = '';
+
+  if (action === 'add') {
+    // ... write some code ...
+  } else if (action === 'remove') {
+    // ... write some code ...
+  }
 
   /* -- render new words -- */
   const sorted = sortStrings(data.words, data.sort);
-  updateList(sorted);
+  const newList = renderList(sorted);
+
+  const listContainer = document.getElementById('list-container');
+  listContainer.innerHTML = '';
+  listContainer.appendChild(newList);
 };

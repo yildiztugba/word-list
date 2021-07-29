@@ -1,6 +1,6 @@
-import { data } from '../data.js';
+import { data } from '../../data.js';
 import { sortStrings } from '../logic/sort-strings.js';
-import { updateList } from '../procedures/update-list.js';
+import { renderList } from '../components/render-list.js';
 
 /**
  * Entry point for users sorting the list of words in this app.
@@ -25,5 +25,9 @@ export const handleSortWords = (event) => {
   // ... write some code ...
 
   /* -- render new words -- */
-  updateList(sorted);
+  const newList = renderList(sorted);
+
+  const listContainer = document.getElementById('list-container');
+  listContainer.innerHTML = '';
+  listContainer.appendChild(newList);
 };

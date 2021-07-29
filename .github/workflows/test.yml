@@ -1,9 +1,13 @@
 # https://joelhooks.com/jest-and-github-actions
 
-name: Test CI
+name: Test
+
 on:
   pull_request:
     branches: [master, main]
+  push:
+    branches: [master, main]
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -14,7 +18,7 @@ jobs:
         with:
           node-version: '12'
       - run: npm install
-      - run: npm run test:ci
+      - run: npm run ci:test
       - name: Tests ✅
         if: ${{ success() }}
         run: |

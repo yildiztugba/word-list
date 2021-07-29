@@ -6,36 +6,55 @@
 
 <!-- BEGIN TREE -->
 
+> [interactive graph](./dependency-graph.html)
+
 ![dependency graph](./dependency-graph.svg)
 
 <!-- END TREE -->
 
 <!-- BEGIN TOC -->
 
-- handlers
-  - [input-word.js](#srchandlersinput-wordjs)
-  - [sort-words.js](#srchandlerssort-wordsjs)
-- init
-  - [index.js](#srcinitindexjs)
-- listeners
-  - [input-word.js](#srclistenersinput-wordjs)
-  - [sort-words.js](#srclistenerssort-wordsjs)
-- logic
-  - [is-word.js](#srclogicis-wordjs)
-  - [sort-strings.js](#srclogicsort-stringsjs)
-- procedures
-  - [update-list.js](#srcproceduresupdate-listjs)
-- [data.js](#srcdatajs)
+- public
+- src
+  - components
+    - [render-list.js](#clientsrccomponentsrender-listjs)
+  - handlers
+    - [input-word.js](#clientsrchandlersinput-wordjs)
+    - [sort-words.js](#clientsrchandlerssort-wordsjs)
+  - init
+    - [index.js](#clientsrcinitindexjs)
+  - listeners
+    - [input-word.js](#clientsrclistenersinput-wordjs)
+    - [sort-words.js](#clientsrclistenerssort-wordsjs)
+  - logic
+    - [is-word.js](#clientsrclogicis-wordjs)
+    - [sort-strings.js](#clientsrclogicsort-stringsjs)
+- styles
+- [data.js](#clientdatajs)
+
+---
 
 <!-- END TOC -->
 
 <!-- BEGIN DOCS -->
 
+# /public
+
 ---
 
-# /handlers
+# /src
 
-<details><summary><a href="../src/handlers/input-word.js" id="srchandlersinput-wordjs">src/handlers/input-word.js</a></summary>
+## /components
+
+<details><summary><a href="../../client/src/components/render-list.js" id="clientsrccomponentsrender-listjs">../client/src/components/render-list.js</a></summary>
+
+</details>
+
+---
+
+## /handlers
+
+<details><summary><a href="../../client/src/handlers/input-word.js" id="clientsrchandlersinput-wordjs">../client/src/handlers/input-word.js</a></summary>
 
 <a name="handleInputWord"></a>
 
@@ -50,7 +69,7 @@ It is called each time the user clicks the "add word" button.
 
 </details>
 
-<details><summary><a href="../src/handlers/sort-words.js" id="srchandlerssort-wordsjs">src/handlers/sort-words.js</a></summary>
+<details><summary><a href="../../client/src/handlers/sort-words.js" id="clientsrchandlerssort-wordsjs">../client/src/handlers/sort-words.js</a></summary>
 
 <a name="handleSortWords"></a>
 
@@ -67,41 +86,29 @@ It is called each time the input selection changes.
 
 ---
 
-[TOP](#DOCS)
+## /init
 
----
-
-# /init
-
-<details><summary><a href="../src/init/index.js" id="srcinitindexjs">src/init/index.js</a></summary>
+<details><summary><a href="../../client/src/init/index.js" id="clientsrcinitindexjs">../client/src/init/index.js</a></summary>
 
 </details>
 
 ---
 
-[TOP](#DOCS)
+## /listeners
 
----
-
-# /listeners
-
-<details><summary><a href="../src/listeners/input-word.js" id="srclistenersinput-wordjs">src/listeners/input-word.js</a></summary>
+<details><summary><a href="../../client/src/listeners/input-word.js" id="clientsrclistenersinput-wordjs">../client/src/listeners/input-word.js</a></summary>
 
 </details>
 
-<details><summary><a href="../src/listeners/sort-words.js" id="srclistenerssort-wordsjs">src/listeners/sort-words.js</a></summary>
+<details><summary><a href="../../client/src/listeners/sort-words.js" id="clientsrclistenerssort-wordsjs">../client/src/listeners/sort-words.js</a></summary>
 
 </details>
 
 ---
 
-[TOP](#DOCS)
+## /logic
 
----
-
-# /logic
-
-<details><summary><a href="../src/logic/is-word.js" id="srclogicis-wordjs">src/logic/is-word.js</a></summary>
+<details><summary><a href="../../client/src/logic/is-word.js" id="clientsrclogicis-wordjs">../client/src/logic/is-word.js</a></summary>
 
 <a name="isWord"></a>
 
@@ -123,7 +130,7 @@ Checks if a string is a word. A word contains only letters.
 
 </details>
 
-<details><summary><a href="../src/logic/sort-strings.js" id="srclogicsort-stringsjs">src/logic/sort-strings.js</a></summary>
+<details><summary><a href="../../client/src/logic/sort-strings.js" id="clientsrclogicsort-stringsjs">../client/src/logic/sort-strings.js</a></summary>
 
 <a name="sortStrings"></a>
 
@@ -149,31 +156,13 @@ It does not modify the argument (no side-effects).
 
 ---
 
-[TOP](#DOCS)
+---
+
+# /styles
 
 ---
 
-# /procedures
-
-<details><summary><a href="../src/procedures/update-list.js" id="srcproceduresupdate-listjs">src/procedures/update-list.js</a></summary>
-
-<a name="updateList"></a>
-
-## updateList
-
-Renders an array of strings as an unordered list into the #list-container element
-
-| Param      | Type                              | Default         | Description                               |
-| ---------- | --------------------------------- | --------------- | ----------------------------------------- |
-| [toRender] | <code>Array.&lt;string&gt;</code> | <code>[]</code> | an array of strings to render into the UI |
-
-</details>
-
----
-
-[TOP](#DOCS)
-
-<details><summary><a href="../src/data.js" id="srcdatajs">src/data.js</a></summary>
+<details><summary><a href="../../client/data.js" id="clientdatajs">../client/data.js</a></summary>
 
 <a name="data"></a>
 

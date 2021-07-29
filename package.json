@@ -1,17 +1,17 @@
 {
-  "name": "word-list",
-  "version": "1.0.0",
+  "name": "javascript-quiz",
+  "version": "0.0.0",
   "scripts": {
-    "tree": "depcruise --prefix ../ --include-only \"^src\" --output-type dot src | graphviz -Tsvg -odocs/dependency-graph.svg",
-    "document": "node ./dev-scripts/document.js && npm run tree",
-    "test": "node --experimental-vm-modules node_modules/.bin/jest",
-    "test:ci": "node --experimental-vm-modules node_modules/.bin/jest",
+    "tree": "depcruise --prefix ../ --include-only \"^client\" --exclude '(sandbox.js|(\\S)+.spec.js)' --output-type dot client | graphviz -Tsvg -odocs/dependency-graph.svg",
+    "tree:html": "depcruise --prefix ../ --include-only \"^client\" --exclude '(sandbox.js|(\\S)+.spec.js)' *.spec.js --output-type dot client | graphviz -Tsvg | depcruise-wrap-stream-in-html > docs/dependency-graph.html",
+    "document": "node ./dev-scripts/document.js ../client && npm run tree",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --passWithNoTests",
     "lint:css": "stylelint",
-    "lint:css:ci": "stylelint 'public/**/*.css'",
     "lint:js": "eslint --max-warnings=0 --ext=.js --format=codeframe",
-    "lint:js:ci": "npm run lint:js -- ./src",
-    "format": "prettier",
-    "dev": "lite-server"
+    "ci:test": "node --experimental-vm-modules node_modules/.bin/jest --passWithNoTests ./client",
+    "ci:lint:js": "eslint --max-warnings=0 --ext=.js --format=codeframe ./client",
+    "ci:lint:css": "stylelint './client/styles'",
+    "format": "prettier --write ./client"
   },
   "type": "module",
   "repository": {
@@ -26,9 +26,11 @@
   "homepage": "https://github.com/hackyourfuturebelgium/word-list",
   "devDependencies": {
     "dependency-cruiser": "^10.0.1",
-    "eslint": "^7.25.0",
+    "eslint": "^7.27.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-folders": "^1.0.3",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsdoc": "^32.3.1",
     "eslint-plugin-prefer-arrow": "^1.2.3",
@@ -39,7 +41,6 @@
     "jsdoc-to-markdown": "^6.0.1",
     "prettier": "^2.2.1",
     "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^22.0.0",
-    "lite-server": "^2.6.1"
+    "stylelint-config-standard": "^22.0.0"
   }
 }
