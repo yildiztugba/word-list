@@ -56,9 +56,9 @@
 
 <details><summary><a href="../../client/src/handlers/input-word.js" id="clientsrchandlersinput-wordjs">../client/src/handlers/input-word.js</a></summary>
 
-<a name="handleInputWord"></a>
+<a name="inputWord"></a>
 
-## handleInputWord
+## inputWord
 
 Entry point for users adding a word to the list.
 It is called each time the user clicks the "add word" button.
@@ -71,9 +71,9 @@ It is called each time the user clicks the "add word" button.
 
 <details><summary><a href="../../client/src/handlers/sort-words.js" id="clientsrchandlerssort-wordsjs">../client/src/handlers/sort-words.js</a></summary>
 
-<a name="handleSortWords"></a>
+<a name="sortWords"></a>
 
-## handleSortWords
+## sortWords
 
 Entry point for users sorting the list of words in this app.
 It is called each time the input selection changes.
@@ -139,12 +139,12 @@ Checks if a string is a word. A word contains only letters.
 Sorts an array of strings in different ways.
 It does not modify the argument (no side-effects).
 
-**Returns**: <code>Array.&lt;string&gt;</code> - a new sorted array containing the same strings as toSort
+**Returns**: <code>Array.&lt;string&gt;</code> - A new sorted array containing the same strings as toSort.
 
-| Param      | Type                              | Default                                     | Description                                                                                                                                                                                                                                                                                                      |
-| ---------- | --------------------------------- | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [toSort]   | <code>Array.&lt;string&gt;</code> | <code>&#x27;&#x27;</code>                   | The array of strings to sort.                                                                                                                                                                                                                                                                                    |
-| [sortType] | <code>string</code>               | <code>&quot;&#x27;oldest&#x27;&quot;</code> | How to sort the strings, 6 options. - oldest: from oldest to newest - newest: from newest to oldest - shortest: from shortest to longest - longest: from longest to shortest - a: alphabetical order - z: reverse alphabetical order if the sortType is not one of these 6 options, a copy of toSort is returned |
+| Param      | Type                              | Default                                     | Description                                                                                                                                                                                                                                                                                                             |
+| ---------- | --------------------------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [toSort]   | <code>Array.&lt;string&gt;</code> | <code>&#x27;&#x27;</code>                   | The array of strings to sort.                                                                                                                                                                                                                                                                                           |
+| [sortType] | <code>string</code>               | <code>&quot;&#x27;oldest&#x27;&quot;</code> | How to sort the strings, 6 options. - oldest: from oldest to newest. - newest: from newest to oldest. - shortest: from shortest to longest. - longest: from longest to shortest. - a: alphabetical order. - z: reverse alphabetical order. If the sortType is not one of these 6 options, a copy of toSort is returned. |
 
 **Example**
 

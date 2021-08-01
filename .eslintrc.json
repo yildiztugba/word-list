@@ -5,7 +5,10 @@
     "prettier",
     "spellcheck",
     "filenames",
-    "folders"
+    "folders",
+    "boundaries",
+    "sonarjs",
+    "disable"
   ],
   "parserOptions": {
     "sourceType": "module"
@@ -13,6 +16,7 @@
   "env": {
     "browser": true
   },
+  "processor": "disable/disable",
   "overrides": [
     {
       "files": ["**/logic/**/*.js"],
@@ -35,6 +39,9 @@
         "no-magic-numbers": 0,
         "no-undefined": 0
       },
+      "settings": {
+        "disable/plugins": ["sonarjs"]
+      },
       "env": {
         "jest": true
       }
@@ -51,13 +58,22 @@
         "no-unused-vars": 0,
         "spellcheck/spell-checker": 0
       },
+      "settings": {
+        "disable/plugins": ["sonarjs"]
+      },
       "env": {
         "jest": true
       }
     }
   ],
   "ignorePatterns": ["dev-scripts/*.js"],
-  "extends": ["eslint:recommended", "airbnb-base", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    "prettier",
+    "plugin:boundaries/strict",
+    "plugin:sonarjs/recommended"
+  ],
   "rules": {
     "no-var": 1,
     "prefer-const": 1,
@@ -82,6 +98,7 @@
     "guard-for-in": 0,
     "no-unmodified-loop-condition": 1,
     "no-warning-comments": 1,
+    "no-invalid-this": 1,
     "prefer-destructuring": 1,
     "no-nested-ternary": 0,
     "no-restricted-syntax": [
@@ -106,6 +123,64 @@
 
     "folders/match-regex": [2, "^(?!.*([-])\\1{1})[a-z-]+$", "src"],
     "filenames/match-regex": [2, "^(?!.*([-])\\1{1})[a-z-.spec]+$"],
+
+    "boundaries/element-types": [
+      2,
+      {
+        "default": "disallow",
+        "rules": [
+          { "from": "api-calls", "allow": ["logic"] },
+          {
+            "from": "components",
+            "allow": ["components", "handlers", "logic"]
+          },
+          { "from": "data", "allow": ["data"] },
+          {
+            "from": "handlers",
+            "allow": [
+              "api-calls",
+              "components",
+              "data",
+              "handlers",
+              "init",
+              "logic",
+              "procedures"
+            ]
+          },
+          {
+            "from": "init",
+            "allow": [
+              "components",
+              "data",
+              "handlers",
+              "init",
+              "listeners",
+              "logic",
+              "procedures"
+            ]
+          },
+          { "from": "listeners", "allow": ["handlers"] },
+          { "from": "logic", "allow": ["logic"] },
+          {
+            "from": "procedures",
+            "allow": [
+              "api-calls",
+              "components",
+              "data",
+              "handlers",
+              "init",
+              "logic",
+              "procedures"
+            ]
+          }
+        ]
+      }
+    ],
+
+    "import/prefer-default-export": 0,
+    "import/named": 2,
+    "import/no-cycle": 0,
+    "import/extensions": [1, { "js": "always" }],
 
     "jsdoc/check-alignment": 1,
     "jsdoc/check-indentation": 1,
@@ -134,11 +209,23 @@
     "jsdoc/require-throws": 1,
     "jsdoc/require-yields": 1,
     "jsdoc/require-yields-check": 1,
-    "jsdoc/valid-types": 1,
-
-    "import/prefer-default-export": 0,
-    "import/named": 2,
-    "import/no-cycle": 0,
-    "import/extensions": [1, { "js": "always" }]
+    "jsdoc/valid-types": 1
+  },
+  "settings": {
+    "boundaries/elements": [
+      { "type": "api-calls", "pattern": "api-calls" },
+      { "type": "components", "pattern": "components" },
+      {
+        "type": "data",
+        "mode": "full",
+        "pattern": ["client/data.js", "data/**/*.js"]
+      },
+      { "type": "handlers", "pattern": "handlers" },
+      { "type": "init", "pattern": "init" },
+      { "type": "listeners", "pattern": "listeners" },
+      { "type": "logic", "pattern": "logic" },
+      { "type": "procedures", "pattern": "procedures" }
+    ],
+    "boundaries/ignore": ["**/*.spec.js", "**/sandbox.js"]
   }
 }

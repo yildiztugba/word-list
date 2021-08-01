@@ -8,10 +8,9 @@ import { renderList } from '../components/render-list.js';
  *
  * @param {Event} event - The event triggered by changing the input.
  */
-export const handleSortWords = (event) => {
+export const sortWords = (event) => {
   /* -- entry point for sorting the words -- */
   // debugger;
-  console.log('-- handler: sort words --');
 
   /* -- gather user input from DOM -- */
   const howToSort = event.target.value;

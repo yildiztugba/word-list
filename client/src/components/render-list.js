@@ -8,5 +8,5 @@ export const renderList = (toRender = []) => {
     ulEl.appendChild(liEl);
   }
 
-  return list;
+  return ulEl;
 };
