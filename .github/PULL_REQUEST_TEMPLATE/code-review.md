@@ -7,7 +7,7 @@ about: A template PR for contributing to this project
   make this PR easy to find:
 
   - assign yourself
-  - labels: `for: _`, `type: _`, ...
+  - link it to an issue
   - milestones
   - request a review
 -->
@@ -49,29 +49,21 @@ about: A template PR for contributing to this project
 - [ ] there is no unused code in comments
 - [ ] all file names are helpful and match their exports
 
-<details>
-<summary>src/data.js</summary>
-<br>
+#### src/data.js
 
 - [ ] the file does not import anything
 - [ ] the file only exports JS data (primitives, arrays, objects, ...)
 - [ ] the file does not contain any functions or logic
 - (optional) the data is documented with JSDocs
 
-</details>
-<details>
-<summary>src/init</summary>
-<br>
+#### src/init
 
 - [ ] there is an `index.js` that is included by the `index.html` file
 - [ ] `../listener` files are imported
 - [ ] there is no code that needs to run _after_ the page is initialized
 - [ ] any other files have helpful names
 
-</details>
-<details>
-<summary>src/listeners</summary>
-<br>
+#### src/listeners
 
 - [ ] the DOM can be queried to find elements
 - [ ] the DOM _is not_ be modified
@@ -79,10 +71,7 @@ about: A template PR for contributing to this project
 - [ ] no other functions are imported or used
 - [ ] the file name makes sense for the listener
 
-</details>
-<details>
-<summary>src/handlers</summary>
-<br>
+#### src/handlers
 
 - [ ] handlers have a JSDoc comment
 - [ ] the function name matches the file name
@@ -93,21 +82,16 @@ about: A template PR for contributing to this project
 - [ ] handlers may read and write to the DOM
 - [ ] handlers _do not_ return values that you will need later in the program
 
-</details>
-<details>
-<summary>src/components</summary>
-<br>
+#### src/components
 
 - [ ] A DOM element is returned
 - [ ] handlers can be imported and used as callbacks to event listeners
 - [ ] _logic_, _components_ and _procedures_ can also be imported
 - [ ] there is an HTML test file to render the component with different inputs
-- [ ] bonus points for unit tests
+- [ ] each component has a `.test.html` file
+- [ ] bonus points for a unit test `.spec.js` file
 
-</details>
-<details>
-<summary>src/logic</summary>
-<br>
+#### src/logic
 
 - [ ] the handler has a complete and correct JSDoc comment
 - [ ] the function name matches the file name
@@ -119,5 +103,3 @@ about: A template PR for contributing to this project
   - [ ] tests are well-named
   - [ ] tests cover common use cases (bonus for edge cases)
   - [ ] tests check for side-effects (if necessary)
-
-</details>
