@@ -109,11 +109,11 @@ This repository comes with features to help you and your group write good code. 
 
 > checks on GitHub
 
-When you open a PR to `main`/`master` in your repository, GitHub will run the workflows in [./.github/workflows](./.github/workflows):
+When you open a PR to `main`/`master` in your repository, GitHub will run the workflows in [./.github/workflows](./.github/workflows). You can try the same scripts locally to make sure they will pass before pushing:
 
-- **`npm run ci:lint:js`**: Lints all the .js files in your `/src` folder, if there are any warnings or errors the check will fail.
-- **`npm run ci:lint:css`**: lints all the .css files in your `/styles` folder, if there are any warnings or errors the check will fail.
-- **`npm run ci:test`**: runs all the `.spec.js` fils in your `/src` folder. If any tests fail, this check will fail.
+- **`npm run lint:js -- ./client`**: Lints all the .js files in your `/src` folder, if there are any warnings or errors the check will fail.
+- **`npm run lint:css -- ./client/styles`**: lints all the .css files in your `/styles` folder, if there are any warnings or errors the check will fail.
+- **`npm run test -- ./client`**: runs all the `.spec.js` fils in your `/src` folder. If any tests fail, this check will fail.
 - **`npm run document`**: re-renders the `DOCS.md` file in the root of your repository, making sure that the documentation is always up to date. If the documentation script has any trouble the check will fail.
 
 You will not be able to merge your branch until all the checks pass. These checks will be run again each time you push changes to your branch, so no worries if you don't pass the checks on your first try.

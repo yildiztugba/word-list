@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: '12'
       - run: npm install
-      - run: npm run ci:test
+      - run: npm run test -- ./client
       - name: Tests ✅
         if: ${{ success() }}
         run: |
