@@ -8,8 +8,6 @@
     "test": "node --experimental-vm-modules node_modules/.bin/jest --passWithNoTests",
     "lint:css": "stylelint",
     "lint:js": "eslint --max-warnings=0 --ext=.js --format=codeframe",
-    "ci:test": "node --experimental-vm-modules node_modules/.bin/jest --passWithNoTests ./client",
-    "ci:lint:js": "eslint --max-warnings=0 --ext=.js --format=codeframe ./client",
     "ci:lint:css": "stylelint './client/styles'",
     "format": "prettier --write ./client"
   },
