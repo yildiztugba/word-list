@@ -1,3 +1,3 @@
 # Wireframe for WordList
 
-![wireframe](https://github.com/yildiztugba/word-list/tree/tugba/planning/wireframe-wordlist.png)
+![wireframe](https://github.com/yildiztugba/word-list/blob/tugba/planning/wireframe-wordlist.png)
